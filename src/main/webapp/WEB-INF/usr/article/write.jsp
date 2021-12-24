@@ -4,7 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <title>JSP Board</title>
+<!-- 데이지ui & 테일윈드 불러오기 -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@1.17.1/dist/full.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
+<!-- css 불러오기 -->
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/font.css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/common.css" />
 </head>
