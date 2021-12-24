@@ -4,6 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>JSP Board</title>
+<!-- 모바일에서 디자인이 축소되지 않게 하기 위한 코드 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- 데이지ui & 테일윈드 불러오기 -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@1.17.1/dist/full.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
@@ -12,7 +14,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/common.css" />
 </head>
 <body>
-  <section class="section section-article">
+  <section class="section section-article-write px-4">
     <div class="container">
 
       <script>
