@@ -15,15 +15,13 @@
 </head>
 <body>
   <section class="section section-article-write px-4">
-    <div class="container">
-
+    <div class="container mx-auto">
       <script>
 							let ArticleWrite__submitDone = false;
 							function ArticleWrite__submit(form) {
 								if (ArticleWrite__submitDone) {
 									return;
 								}
-
 								if (form.title.value.length == 0) {
 									alert('제목을 입력해주세요.');
 									form.title.focus();
@@ -34,20 +32,18 @@
 									form.body.focus();
 									return;
 								}
-
 								form.submit();
 								ArticleWrite__submitDone = true;
 							}
 						</script>
-      <form action="../article/doWrite" method="post" onsubmit="ArticleWrite__submit(this); return false;">
-
+      <form action="../article/doWrite" method="POST" onsubmit="ArticleWrite__submit(this); return false;">
         <div class="form-control">
           <label class="label">
             <span class="label-text">제목</span>
           </label>
           <div>
             <input class="input input-bordered w-full" maxlength="100" name="title" type="text"
-              placeholder="제목을 입력해주세요.">
+              placeholder="제목을 입력해주세요." />
           </div>
         </div>
 
@@ -55,14 +51,13 @@
           <label class="label">
             <span class="label-text">내용</span>
           </label>
-          <textarea class="textarea textarea-bordered h-60" name="body" maxlength="2000" placeholder="내용을 입력해주세요."></textarea>
+          <textarea maxlength="2000" class="textarea textarea-bordered h-60" placeholder="내용을 입력해주세요." name="body"></textarea>
         </div>
 
         <div class="btns">
           <button type="submit" class="btn btn-link">작성</button>
           <button type="button" class="btn btn-link">작성취소</button>
         </div>
-
       </form>
     </div>
   </section>
